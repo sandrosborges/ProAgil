@@ -12,6 +12,7 @@ import { EventosComponent } from './Eventos/Eventos.component';
 import { NavComponent } from './nav/nav.component';
 
 import { DateTimeFormatPipe } from './_helps/DateFormatPipe.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DateTimeFormatPipe } from './_helps/DateFormatPipe.pipe';
       DateTimeFormatPipe
    ],
    imports: [
+      BrowserAnimationsModule,
       BrowserModule,
       AppRoutingModule,
       HttpClientModule,
