@@ -16,8 +16,7 @@ namespace ProAgil.API.Controllers
             this._repo = repo;
 
         }
-
-        // GET api/values
+ 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -86,7 +85,7 @@ namespace ProAgil.API.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPut("{EventoId}")]
         public async Task<IActionResult> Put(int EventoId, Evento model)
         {
             try
@@ -112,7 +111,7 @@ namespace ProAgil.API.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{EventoId}")]
         public async Task<IActionResult> Delete(int EventoId)
         {
             try
