@@ -10,6 +10,7 @@ import { defineLocale } from 'ngx-bootstrap/chronos';
 defineLocale('pt-br', ptBrLocale);
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'app-Eventos',
   templateUrl: './Eventos.component.html',
   styleUrls: ['./Eventos.component.css'],
